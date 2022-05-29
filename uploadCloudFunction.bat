@@ -1,0 +1,1 @@
+"E:\微信web开发者工具\cli.bat" cloud functions deploy --e moshang-8gsz5hcn19c4771f --n quickstartFunctions --r --project "D:\个人\mixue-mp" --report_first --report
