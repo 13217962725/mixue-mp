@@ -51,6 +51,13 @@
 					"pathName": "pages/updateRecordSuccess/index",
 					"query": "",
 					"scene": null
+				},
+				{
+					"name": "登录页面",
+					"pathName": "pages/login/index",
+					"query": "",
+					"launchMode": "default",
+					"scene": null
 				}
 			]
 		}

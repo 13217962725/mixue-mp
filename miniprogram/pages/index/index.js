@@ -1,4 +1,5 @@
 import swiper from "../../api/swiper"
+const app = getApp()
 Page({
 
 	/**
@@ -6,7 +7,8 @@ Page({
 	 */
 	data: {
 		swiperList: [],
-		current: 0
+		current: 0,
+		memberInfo: false
 	},
 
 	onSwiperChange(e) {
@@ -26,6 +28,21 @@ Page({
 			this.setData({
 				swiperList: res.data
 			})
+		})
+
+	},
+
+	loadMemberInfo() {
+		if (wx.getStorageSync('phoneNumber')) {
+			this.setData({
+				memberInfo: true
+			})
+		}
+	},
+
+	gotoLogin() {
+		wx.navigateTo({
+			url: '/pages/login/index',
 		})
 	},
 
@@ -50,7 +67,7 @@ Page({
 	 * 生命周期函数--监听页面显示
 	 */
 	onShow() {
-
+		this.loadMemberInfo();
 	},
 
 	/**

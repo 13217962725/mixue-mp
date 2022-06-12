@@ -5,7 +5,8 @@
 		"pages/order/index",
 		"pages/me/index",
 		"pages/web-view/index",
-		"pages/product/detail"
+		"pages/product/detail",
+		"pages/login/index"
 	],
 	"window": {
 		"backgroundColor": "#F6F6F6",
